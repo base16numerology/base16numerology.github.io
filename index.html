@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Base 16 Numerology — Decoding Your Life in Hex</title>
-    <meta name="description" content="A computable, archetype-based numerology-inspired system built from hex, Unicode bytes, Unix timestamps, and a small hash. Mystical enough for archetypes. Skeptical enough for the math." />
+    <title>Horace Chan — Base 16 Numerologist | Hex Soul Map Readings</title>
+    <meta name="description" content="Professional Base 16 Numerology readings by Horace Chan. Discover your Hex Soul Map, decode your life path in hexadecimal, and gain clarity through the language of bytes and archetypes." />
     <link rel="stylesheet" href="assets/style.css" />
-    <meta property="og:title" content="Base 16 Numerology" />
-    <meta property="og:description" content="Decoding your life in hex — from Unix time to soul code." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <meta property="og:title" content="Horace Chan — Base 16 Numerologist" />
+    <meta property="og:description" content="Decode your life in hex. Professional Hex Soul Map readings, personal year forecasts, and relationship overlays." />
     <meta property="og:type" content="website" />
   </head>
   <body>
@@ -15,157 +18,555 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <div class="brand" aria-label="Site title">
-          <div class="title">Base 16 Numerology</div>
-          <div class="subtitle">Decoding your life in hex — from Unix time to soul code</div>
-        </div>
+        <a href="#" class="brand" aria-label="Site title">
+          <span class="brand-hex">0x</span><span class="brand-name">Horace Chan</span>
+        </a>
         <nav class="nav" aria-label="Primary">
-          <a href="#welcome">Welcome</a>
-          <a href="#what">What it is</a>
-          <a href="#how">How it works</a>
-          <a href="#archetypes">0–f</a>
-          <a href="#skeptic">Skeptic mode</a>
-          <a href="#book">Get the EPUB</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#archetypes">The 16</a>
+          <a href="#how">How It Works</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#book">Book</a>
+          <a href="#contact" class="nav-cta">Book a Reading</a>
         </nav>
+        <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
 
-    <main id="main" class="container">
-      <section id="welcome" class="hero">
-        <div class="kicker">Join the hex-minded experiment</div>
-        <h1>Join the Base‑16 Numerology revolution.</h1>
-        <p>
-          Once upon a time, the soul spoke in stories, symbols, and dreams. Then we invented computers.
-          Somewhere between myth and machine, your life can be expressed as characters, bytes, and timestamps.
-        </p>
-        <p>
-          Base 16 Numerology treats modern computing primitives—<span class="code">hex</span>, Unicode bytes,
-          Unix time, and a small open‑source‑style hash—as a symbolic language. It collapses inputs into a single
-          hex digit (<span class="code">0</span>–<span class="code">f</span>), then reads that digit as one of sixteen archetypes.
-        </p>
+    <main id="main">
 
-        <div class="cta-row">
-          <a class="button primary" href="#book">Download the EPUB</a>
-          <a class="button" href="https://github.com/base16numerology/base16numerology" target="_blank" rel="noreferrer">View website repo</a>
-          <a class="button" href="https://github.com/base16numerology/ebook" target="_blank" rel="noreferrer">View ebook repo</a>
-        </div>
-      </section>
-
-      <section id="what" class="section">
-        <h2>What it is</h2>
-        <div class="panel">
-          <p>
-            This is not a claim that the universe is “proven” to run on hex.
-            It’s a structured self‑reflection system that asks a slightly impolite question:
-          </p>
-          <p class="notice">
-            If the universe really wanted to talk to you, would it use Roman numerals—or <strong>hex</strong>?
-          </p>
-          <p class="small">
-            To the devoted numerologist, these digits can feel like the language of the soul.
-            To the geek, they’re modular arithmetic with lore. Both perspectives are welcome.
-          </p>
-        </div>
-      </section>
-
-      <section id="how" class="section">
-        <h2>How it works (computable, on purpose)</h2>
-        <div class="panel">
-          <p>
-            The book’s core idea is simple: translate your inputs into the same substrate computers use, then reduce them
-            into one archetypal symbol.
-          </p>
-          <p class="code">
-            input → bytes (ASCII/Unicode) → LIBRE‑256 hash → mod 16 → one hex digit (0..f)
-          </p>
-          <p>
-            That one digit can appear in different “slots” (Life Path, Expression, Soul Urge, Personality, Maturity,
-            cycles and event signatures), giving multiple angles on the same underlying pattern.
-          </p>
-          <p class="small">
-            This site intentionally omits the “app” link for now; the book explains the concepts and interpretation.
-          </p>
-        </div>
-      </section>
-
-      <section id="archetypes" class="section">
-        <h2>The sixteen archetypes (0–f)</h2>
-        <p>
-          The archetypes live in four realms: Physical (0–3), Emotional (4–7), Mental (8–b), and Spiritual (c–f).
-          Here’s the quick map.
-        </p>
-
-        <div class="grid" role="list">
-          <div class="card" role="listitem"><div class="hex">0</div><div class="name">The Field</div><div class="desc">Pure potential, blank canvas</div></div>
-          <div class="card" role="listitem"><div class="hex">1</div><div class="name">The Spark</div><div class="desc">Identity, initiative, will</div></div>
-          <div class="card" role="listitem"><div class="hex">2</div><div class="name">The Mirror</div><div class="desc">Relationship, balance, reflection</div></div>
-          <div class="card" role="listitem"><div class="hex">3</div><div class="name">The Voice</div><div class="desc">Expression, creativity, signal</div></div>
-
-          <div class="card" role="listitem"><div class="hex">4</div><div class="name">The Foundation</div><div class="desc">Structure, stability, craft</div></div>
-          <div class="card" role="listitem"><div class="hex">5</div><div class="name">The Traveler</div><div class="desc">Change, freedom, movement</div></div>
-          <div class="card" role="listitem"><div class="hex">6</div><div class="name">The Hearth</div><div class="desc">Care, belonging, beauty</div></div>
-          <div class="card" role="listitem"><div class="hex">7</div><div class="name">The Seeker</div><div class="desc">Truth, depth, inner inquiry</div></div>
-
-          <div class="card" role="listitem"><div class="hex">8</div><div class="name">The Sovereign</div><div class="desc">Power, leadership, impact</div></div>
-          <div class="card" role="listitem"><div class="hex">9</div><div class="name">The Bridge</div><div class="desc">Completion, service, closure</div></div>
-          <div class="card" role="listitem"><div class="hex">a</div><div class="name">The Horizon</div><div class="desc">Expansion, philosophy, big‑picture</div></div>
-          <div class="card" role="listitem"><div class="hex">b</div><div class="name">The Antenna</div><div class="desc">Intuition, inspiration, signal</div></div>
-
-          <div class="card" role="listitem"><div class="hex">c</div><div class="name">The Weaver</div><div class="desc">Synthesis, patterns, mastery</div></div>
-          <div class="card" role="listitem"><div class="hex">d</div><div class="name">The Alchemist</div><div class="desc">Transformation, shadow‑work, rebirth</div></div>
-          <div class="card" role="listitem"><div class="hex">e</div><div class="name">The Heart of All</div><div class="desc">Unity, compassion, oneness</div></div>
-          <div class="card" role="listitem"><div class="hex">f</div><div class="name">The Integrator</div><div class="desc">Wholeness, synthesis, embodiment</div></div>
-        </div>
-      </section>
-
-      <section id="skeptic" class="section">
-        <h2>Skeptic mode</h2>
-        <div class="panel">
-          <p>
-            If you want to approach this like an experiment, here’s the rule:
-            don’t ask “is this objectively true?”—ask “does this describe something useful?”
-          </p>
-          <p>
-            For believers, it can feel like sacred decoding. For skeptics, it’s a symbolic mirror built from Unicode,
-            hashes, and hex.
-          </p>
-          <p class="small">
-            This site is informational and entertainment only and is not a substitute for professional advice.
-          </p>
-        </div>
-      </section>
-
-      <section id="book" class="section">
-        <h2>Get the book (EPUB)</h2>
-        <div class="panel">
-          <p>
-            Download the current EPUB build from the ebook repository’s GitHub Releases.
-          </p>
-          <div class="cta-row">
-            <a class="button primary" href="https://github.com/base16numerology/ebook/releases/latest/download/base16_numerology.epub">Download EPUB</a>
-            <a class="button" href="https://github.com/base16numerology/ebook/releases" target="_blank" rel="noreferrer">All releases</a>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <p class="kicker">Base 16 Numerology</p>
+            <h1>Your life has always been<br>written in <span class="gradient-text">hex</span>.</h1>
+            <p class="hero-sub">I decode the hidden patterns in your name and birth moment using hexadecimal, Unicode bytes, and Unix timestamps — revealing the sixteen archetypes that shape your path, your relationships, and your purpose.</p>
+            <div class="cta-row">
+              <a class="button primary glow" href="#contact">Book Your Hex Soul Map Reading</a>
+              <a class="button secondary" href="#how">See How It Works</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat"><span class="stat-num">16</span><span class="stat-label">Archetypes</span></div>
+              <div class="stat"><span class="stat-num">5</span><span class="stat-label">Core Numbers</span></div>
+              <div class="stat"><span class="stat-num">&infin;</span><span class="stat-label">Possibilities</span></div>
+            </div>
           </div>
-          <p class="small">
-            If the direct download link returns 404, the release asset hasn’t been published yet—check the Releases page.
-          </p>
+          <div class="hero-visual">
+            <div class="hex-wheel">
+              <div class="hex-ring">
+                <span class="hw-digit" style="--i:0">0</span>
+                <span class="hw-digit" style="--i:1">1</span>
+                <span class="hw-digit" style="--i:2">2</span>
+                <span class="hw-digit" style="--i:3">3</span>
+                <span class="hw-digit" style="--i:4">4</span>
+                <span class="hw-digit" style="--i:5">5</span>
+                <span class="hw-digit" style="--i:6">6</span>
+                <span class="hw-digit" style="--i:7">7</span>
+                <span class="hw-digit" style="--i:8">8</span>
+                <span class="hw-digit" style="--i:9">9</span>
+                <span class="hw-digit" style="--i:10">a</span>
+                <span class="hw-digit" style="--i:11">b</span>
+                <span class="hw-digit" style="--i:12">c</span>
+                <span class="hw-digit" style="--i:13">d</span>
+                <span class="hw-digit" style="--i:14">e</span>
+                <span class="hw-digit" style="--i:15">f</span>
+              </div>
+              <div class="hex-center">
+                <span class="hex-center-label">Your<br>Soul<br>Code</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
+      <!-- ABOUT -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-portrait">
+              <div class="portrait-frame">
+                <div class="portrait-placeholder">
+                  <span class="portrait-hex">0xHC</span>
+                </div>
+              </div>
+            </div>
+            <div class="about-text">
+              <p class="kicker">Meet Your Numerologist</p>
+              <h2>Horace Chan</h2>
+              <p class="lead">Engineer by training. Numerologist by calling. I bridge the gap between the language of machines and the language of the soul.</p>
+              <p>After decades working with computers, networks, and algorithms, I became fascinated by a question most engineers never ask: <em>what if the numbers we use to run our machines could also reveal something about the people who use them?</em></p>
+              <p>That question became Base 16 Numerology — a system that uses the same hexadecimal notation, Unicode encoding, and Unix timestamps that power the digital world as a framework for understanding your life path, your relationships, and your timing.</p>
+              <p>I've helped hundreds of clients around the world decode their Hex Soul Maps and gain clarity about career transitions, relationship dynamics, and personal growth. Whether you approach this as sacred practice or structured self-reflection, I meet you where you are.</p>
+              <div class="about-credentials">
+                <div class="credential">
+                  <span class="credential-icon">&#x2318;</span>
+                  <span>Creator of the LIBRE-256 Hash System</span>
+                </div>
+                <div class="credential">
+                  <span class="credential-icon">&#x2318;</span>
+                  <span>Author, <em>Base 16 Numerology</em></span>
+                </div>
+                <div class="credential">
+                  <span class="credential-icon">&#x2318;</span>
+                  <span>Engineer &amp; Systems Thinker</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section services-section">
+        <div class="container">
+          <p class="kicker center">Services</p>
+          <h2 class="center">Discover Your Hex Code</h2>
+          <p class="section-sub center">Every reading is personalized, computed from your exact data, and interpreted with care. Choose the depth of insight you need.</p>
+
+          <div class="services-grid">
+            <div class="service-card featured">
+              <div class="service-badge">Most Popular</div>
+              <div class="service-icon">&#x2B22;</div>
+              <h3>Hex Soul Map Reading</h3>
+              <p class="service-price">$97</p>
+              <p class="service-desc">Your complete five-position Hex Soul Map: Life Path, Expression, Soul Urge, Personality, and Maturity. Includes realm analysis, shadow work insights, and a personalized narrative of your archetypal story.</p>
+              <ul class="service-features">
+                <li>Full 5-position hex chart</li>
+                <li>Detailed archetype interpretations</li>
+                <li>Realm balance analysis</li>
+                <li>Shadow &amp; light patterns</li>
+                <li>30-minute video consultation</li>
+                <li>Written report (PDF)</li>
+              </ul>
+              <a class="button primary" href="#contact">Book This Reading</a>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">&#x29BF;</div>
+              <h3>Personal Year Forecast</h3>
+              <p class="service-price">$67</p>
+              <p class="service-desc">Your Personal Hex Year analysis for the current and upcoming year. Understand the archetypal weather ahead: what themes are emerging, what to initiate, what to release.</p>
+              <ul class="service-features">
+                <li>Current &amp; next year analysis</li>
+                <li>Monthly hex breakdown</li>
+                <li>Timing guidance for decisions</li>
+                <li>20-minute video consultation</li>
+                <li>Written forecast (PDF)</li>
+              </ul>
+              <a class="button secondary" href="#contact">Book This Reading</a>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">&#x2693;</div>
+              <h3>Relationship Overlay</h3>
+              <p class="service-price">$127</p>
+              <p class="service-desc">A deep comparison of two Hex Soul Maps. Reveals resonance points, friction zones, and the composite archetype of the relationship itself — for romantic, business, or family partnerships.</p>
+              <ul class="service-features">
+                <li>Two complete Hex Soul Maps</li>
+                <li>Position-by-position overlay</li>
+                <li>Composite relationship map</li>
+                <li>Compatibility analysis</li>
+                <li>40-minute video consultation</li>
+                <li>Written report (PDF)</li>
+              </ul>
+              <a class="button secondary" href="#contact">Book This Reading</a>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">&#x2605;</div>
+              <h3>Deep Dive Package</h3>
+              <p class="service-price">$247</p>
+              <p class="service-desc">The complete Base 16 experience: Hex Soul Map + Personal Year Forecast + one Relationship Overlay. Plus a lifetime Personal Hex Year timeline and ongoing email support.</p>
+              <ul class="service-features">
+                <li>Everything in all three readings</li>
+                <li>Lifetime year timeline (birth to age 80)</li>
+                <li>Career/vocation hex analysis</li>
+                <li>Place &amp; address hashing</li>
+                <li>60-minute video consultation</li>
+                <li>30 days email follow-up</li>
+              </ul>
+              <a class="button primary" href="#contact">Book This Reading</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- THE 16 ARCHETYPES -->
+      <section id="archetypes" class="section archetypes-section">
+        <div class="container">
+          <p class="kicker center">The System</p>
+          <h2 class="center">Sixteen Archetypes. Four Realms.</h2>
+          <p class="section-sub center">Every hex digit (0–f) maps to an archetype — a recurring pattern in the human experience. They are organized across four realms: Physical, Emotional, Mental, and Spiritual.</p>
+
+          <div class="realm-group">
+            <h3 class="realm-title physical">Physical Realm <span class="realm-range">0–3</span></h3>
+            <div class="archetype-grid">
+              <div class="arch-card physical"><div class="arch-hex">0</div><div class="arch-info"><div class="arch-name">The Field</div><div class="arch-essence">Pure potential, the blank canvas, comfort with the void</div></div></div>
+              <div class="arch-card physical"><div class="arch-hex">1</div><div class="arch-info"><div class="arch-name">The Spark</div><div class="arch-essence">Identity, initiative, courage, the power to begin</div></div></div>
+              <div class="arch-card physical"><div class="arch-hex">2</div><div class="arch-info"><div class="arch-name">The Mirror</div><div class="arch-essence">Relationship, empathy, partnership, balance</div></div></div>
+              <div class="arch-card physical"><div class="arch-hex">3</div><div class="arch-info"><div class="arch-name">The Voice</div><div class="arch-essence">Expression, creativity, storytelling, joy</div></div></div>
+            </div>
+          </div>
+
+          <div class="realm-group">
+            <h3 class="realm-title emotional">Emotional Realm <span class="realm-range">4–7</span></h3>
+            <div class="archetype-grid">
+              <div class="arch-card emotional"><div class="arch-hex">4</div><div class="arch-info"><div class="arch-name">The Foundation</div><div class="arch-essence">Structure, discipline, reliability, craftsmanship</div></div></div>
+              <div class="arch-card emotional"><div class="arch-hex">5</div><div class="arch-info"><div class="arch-name">The Traveler</div><div class="arch-essence">Freedom, change, adventure, sensory exploration</div></div></div>
+              <div class="arch-card emotional"><div class="arch-hex">6</div><div class="arch-info"><div class="arch-name">The Hearth</div><div class="arch-essence">Care, beauty, belonging, nurturing presence</div></div></div>
+              <div class="arch-card emotional"><div class="arch-hex">7</div><div class="arch-info"><div class="arch-name">The Seeker</div><div class="arch-essence">Truth, depth, inner inquiry, spiritual analysis</div></div></div>
+            </div>
+          </div>
+
+          <div class="realm-group">
+            <h3 class="realm-title mental">Mental Realm <span class="realm-range">8–b</span></h3>
+            <div class="archetype-grid">
+              <div class="arch-card mental"><div class="arch-hex">8</div><div class="arch-info"><div class="arch-name">The Sovereign</div><div class="arch-essence">Power, strategic leadership, ethical authority</div></div></div>
+              <div class="arch-card mental"><div class="arch-hex">9</div><div class="arch-info"><div class="arch-name">The Bridge</div><div class="arch-essence">Completion, humanitarian service, graceful endings</div></div></div>
+              <div class="arch-card mental"><div class="arch-hex">a</div><div class="arch-info"><div class="arch-name">The Horizon</div><div class="arch-essence">Expansion, philosophy, teaching, big-picture vision</div></div></div>
+              <div class="arch-card mental"><div class="arch-hex">b</div><div class="arch-info"><div class="arch-name">The Antenna</div><div class="arch-essence">Intuition, inspiration, visionary creativity</div></div></div>
+            </div>
+          </div>
+
+          <div class="realm-group">
+            <h3 class="realm-title spiritual">Spiritual Realm <span class="realm-range">c–f</span></h3>
+            <div class="archetype-grid">
+              <div class="arch-card spiritual"><div class="arch-hex">c</div><div class="arch-info"><div class="arch-name">The Weaver</div><div class="arch-essence">Synthesis, pattern mastery, systems orchestration</div></div></div>
+              <div class="arch-card spiritual"><div class="arch-hex">d</div><div class="arch-info"><div class="arch-name">The Alchemist</div><div class="arch-essence">Transformation, shadow work, death-rebirth cycles</div></div></div>
+              <div class="arch-card spiritual"><div class="arch-hex">e</div><div class="arch-info"><div class="arch-name">The Heart of All</div><div class="arch-essence">Unity, unconditional compassion, healing presence</div></div></div>
+              <div class="arch-card spiritual"><div class="arch-hex">f</div><div class="arch-info"><div class="arch-name">The Integrator</div><div class="arch-essence">Wholeness, elder wisdom, walking paradox</div></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how" class="section how-section">
+        <div class="container">
+          <p class="kicker center">The Process</p>
+          <h2 class="center">How Base 16 Numerology Works</h2>
+          <p class="section-sub center">A computable, transparent, open-source system. No hidden formulas. No vague platitudes. Just bytes, hashes, and honest interpretation.</p>
+
+          <div class="process-steps">
+            <div class="step">
+              <div class="step-num">01</div>
+              <div class="step-content">
+                <h3>Your Data Becomes Bytes</h3>
+                <p>Your name is encoded as Unicode bytes (UTF-8). Your birth moment is converted to a Unix timestamp — the number of seconds since January 1, 1970. Every character, every second, matters.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">02</div>
+              <div class="step-content">
+                <h3>LIBRE-256 Hashes the Bytes</h3>
+                <p>Those bytes pass through LIBRE-256, a small, open-source hash function that compresses any input into a single byte (0–255). It's deterministic, inspectable, and freely available.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">03</div>
+              <div class="step-content">
+                <h3>Modulo 16 Reveals Your Digit</h3>
+                <p>The byte is reduced modulo 16, yielding a single hex digit: 0 through f. This digit is your archetype for that input — one of sixteen fundamental patterns.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">04</div>
+              <div class="step-content">
+                <h3>I Interpret the Pattern</h3>
+                <p>Your five core digits are arranged into a Hex Soul Map. I read the relationships between them — the harmonies, the tensions, the narrative arc — and translate it into practical guidance for your life.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pipeline-visual">
+            <div class="pipe-stage"><span class="pipe-label">Input</span><span class="pipe-example">name, timestamp</span></div>
+            <div class="pipe-arrow">&#x2192;</div>
+            <div class="pipe-stage"><span class="pipe-label">Bytes</span><span class="pipe-example">UTF-8 / int</span></div>
+            <div class="pipe-arrow">&#x2192;</div>
+            <div class="pipe-stage"><span class="pipe-label">LIBRE-256</span><span class="pipe-example">hash → 0x9e</span></div>
+            <div class="pipe-arrow">&#x2192;</div>
+            <div class="pipe-stage"><span class="pipe-label">mod 16</span><span class="pipe-example">→ e</span></div>
+            <div class="pipe-arrow">&#x2192;</div>
+            <div class="pipe-stage accent"><span class="pipe-label">Archetype</span><span class="pipe-example">Heart of All</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+          <p class="kicker center">Client Experiences</p>
+          <h2 class="center">What People Are Saying</h2>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-text">"I'm an engineer, so I was skeptical. But when Horace walked me through my Hex Soul Map, I was genuinely stunned. The Life Path reading described a pattern I'd been living for decades without seeing it. The technical transparency made me trust the process — I could see exactly how my result was computed."</p>
+              <div class="testimonial-author">
+                <span class="testimonial-name">— D.K., Software Architect</span>
+                <span class="testimonial-digits">Life Path: 8 (Sovereign)</span>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-text">"The relationship overlay was a revelation. My partner and I had been stuck in the same argument for months. Seeing our maps side by side gave us a vocabulary for what was happening — the friction wasn't personal, it was archetypal. We've communicated better ever since."</p>
+              <div class="testimonial-author">
+                <span class="testimonial-name">— M.R., Therapist</span>
+                <span class="testimonial-digits">Soul Urge: e (Heart of All)</span>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-text">"I've done traditional numerology, astrology, and Human Design. Base 16 is the first system that made my technical brain AND my spiritual side both nod. The fact that it works in Chinese characters without translation was deeply meaningful to me as a bilingual person."</p>
+              <div class="testimonial-author">
+                <span class="testimonial-name">— L.W., Product Manager</span>
+                <span class="testimonial-digits">Expression: c (Weaver)</span>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-text">"The Personal Year Forecast helped me time a career move I'd been deliberating for two years. I waited for my Spark Year, launched the business, and it's been the best decision I've made. Horace doesn't tell you what to do — he shows you the weather and trusts you to navigate."</p>
+              <div class="testimonial-author">
+                <span class="testimonial-name">— A.T., Entrepreneur</span>
+                <span class="testimonial-digits">Life Path: 1 (Spark)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section faq-section">
+        <div class="container">
+          <p class="kicker center">Common Questions</p>
+          <h2 class="center">Frequently Asked Questions</h2>
+
+          <div class="faq-grid">
+            <details class="faq-item">
+              <summary>Is this like regular numerology?</summary>
+              <p>Base 16 Numerology shares the spirit of traditional numerology — using numbers as a mirror for self-reflection — but the mechanics are completely different. We use hexadecimal (base 16) instead of decimal (base 10), Unicode bytes instead of A=1/B=2 tables, Unix timestamps instead of calendar dates, and a hash function instead of digit-summing. The result is a system that works natively with any language, any script, and any level of time precision.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Do I need to understand computers or hex to benefit from a reading?</summary>
+              <p>Not at all. The technical details are there for transparency — so you know the system is consistent and inspectable — but you don't need to understand them to benefit from the archetypes and guidance. Most of my clients have no technical background. The reading is delivered in plain language.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>How is this different from astrology or tarot?</summary>
+              <p>Astrology uses planetary positions, tarot uses card imagery, and Base 16 Numerology uses hexadecimal computation. The key difference is transparency: you can see exactly how your result was computed, verify it yourself, and even fork the algorithm. There's no hidden mechanism — just bytes, hashes, and interpretation.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>What information do you need from me?</summary>
+              <p>For a Hex Soul Map reading: your full birth name (as it appears on your birth certificate), your birth date, your birth time (as precise as possible), and your birthplace. For relationship overlays, I need the same information for both people.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>What if I don't know my exact birth time?</summary>
+              <p>I can work with approximate birth times. If you have no birth time at all, I can compute your Life Path using noon on your birthday as a reasonable default — though I'll note this approximation in your reading. Your name-based numbers (Expression, Soul Urge, Personality) don't require birth time at all.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Does this work for non-English names?</summary>
+              <p>Yes. This is one of Base 16 Numerology's key advantages. Because we work at the Unicode byte level, names in Chinese, Arabic, Hindi, Russian, Korean, Japanese, Hebrew, and any other script are processed directly — no transliteration needed. If a computer can encode your name, the system can read it.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Is this a science?</summary>
+              <p>No, and I never claim it is. Base 16 Numerology is a structured self-reflection framework built on real computing concepts. The computation is deterministic and verifiable, but the interpretation is symbolic. Think of it as a rigorous tool for self-exploration, not a scientific measurement of personality.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>How are readings delivered?</summary>
+              <p>All readings include a video consultation (via Zoom or Google Meet) and a written PDF report. The consultation lets us discuss your map in real-time and explore the areas most relevant to your current situation. The PDF serves as a reference you can return to over time.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- BOOK -->
+      <section id="book" class="section book-section">
+        <div class="container">
+          <div class="book-grid">
+            <div class="book-cover">
+              <div class="book-cover-visual">
+                <div class="book-spine"></div>
+                <div class="book-front">
+                  <p class="book-cover-kicker">The Complete Guide</p>
+                  <h3 class="book-cover-title">Base 16<br>Numerology</h3>
+                  <p class="book-cover-subtitle">Decoding Your Life in Hex,<br>from Unix Time to Soul Code</p>
+                  <p class="book-cover-author">Horace Chan</p>
+                </div>
+              </div>
+            </div>
+            <div class="book-info">
+              <p class="kicker">The Book</p>
+              <h2>Learn the Full System</h2>
+              <p class="lead">Everything you need to understand, practice, and master Base 16 Numerology — from the sixteen archetypes to the LIBRE-256 hash function, from reading your own Hex Soul Map to interpreting relationship overlays and personal year cycles.</p>
+              <ul class="book-contents">
+                <li>The Power of Sixteen — why hex is the perfect symbolic base</li>
+                <li>LIBRE-256 — the open-source hash explained</li>
+                <li>All sixteen archetypes in full depth</li>
+                <li>How to read your Hex Soul Map</li>
+                <li>Personal Hex Years and timing</li>
+                <li>Relationships, careers, and places in hex</li>
+                <li>Practice case studies and worksheets</li>
+              </ul>
+              <div class="cta-row">
+                <a class="button primary" href="https://github.com/base16numerology/ebook/releases/latest/download/base16_numerology.epub">Download Free EPUB</a>
+                <a class="button secondary" href="https://github.com/base16numerology/ebook" target="_blank" rel="noreferrer">View Source</a>
+              </div>
+              <p class="book-note">The book is free and open-source — because the system should be inspectable by anyone.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT / BOOKING -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <p class="kicker">Book a Reading</p>
+              <h2>Ready to Decode<br>Your Hex?</h2>
+              <p>Send me your details and I'll prepare your personalized Hex Soul Map. All readings include a video consultation and a written PDF report.</p>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:readings@base16numerology.com">readings@base16numerology.com</a>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-label">Response time</span>
+                  <span>Within 48 hours</span>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-label">Readings delivered via</span>
+                  <span>Zoom / Google Meet + PDF</span>
+                </div>
+              </div>
+              <div class="trust-badges">
+                <div class="trust-badge">&#x2713; Fully transparent system</div>
+                <div class="trust-badge">&#x2713; Works with any language or script</div>
+                <div class="trust-badge">&#x2713; Open-source algorithm</div>
+                <div class="trust-badge">&#x2713; Satisfaction guaranteed</div>
+              </div>
+            </div>
+            <div class="contact-form-wrap">
+              <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+                <div class="form-group">
+                  <label for="name">Full Name (as on birth certificate)</label>
+                  <input type="text" id="name" name="name" required placeholder="Your full birth name" />
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com" />
+                  </div>
+                  <div class="form-group">
+                    <label for="birthdate">Birth Date &amp; Time</label>
+                    <input type="text" id="birthdate" name="birthdate" required placeholder="e.g. March 15, 1990, 8:30 AM" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="birthplace">Birthplace</label>
+                  <input type="text" id="birthplace" name="birthplace" placeholder="City, Country" />
+                </div>
+                <div class="form-group">
+                  <label for="service">Service</label>
+                  <select id="service" name="service">
+                    <option value="soul-map">Hex Soul Map Reading — $97</option>
+                    <option value="year-forecast">Personal Year Forecast — $67</option>
+                    <option value="relationship">Relationship Overlay — $127</option>
+                    <option value="deep-dive">Deep Dive Package — $247</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Anything else I should know?</label>
+                  <textarea id="message" name="message" rows="3" placeholder="Questions, context, or what you're hoping to explore..."></textarea>
+                </div>
+                <button type="submit" class="button primary full-width">Send Booking Request</button>
+                <p class="form-note">I'll reply within 48 hours to confirm your reading and schedule your consultation.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
       <footer class="footer">
-        <div class="panel">
-          <div class="kicker">Additional links</div>
-          <div class="links">
-            <a href="#welcome">Welcome</a>
-            <a href="#how">How it works</a>
-            <a href="#archetypes">Archetypes</a>
-            <a href="#book">Get the EPUB</a>
-            <a href="https://github.com/base16numerology/base16numerology" target="_blank" rel="noreferrer">GitHub</a>
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <span class="brand-hex">0x</span><span class="brand-name">Horace Chan</span>
+              <p class="footer-tagline">Base 16 Numerology — Decoding your life in hex.</p>
+            </div>
+            <div class="footer-links">
+              <h4>Navigate</h4>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#archetypes">The 16 Archetypes</a>
+              <a href="#how">How It Works</a>
+              <a href="#book">The Book</a>
+              <a href="#contact">Book a Reading</a>
+            </div>
+            <div class="footer-links">
+              <h4>Resources</h4>
+              <a href="https://github.com/base16numerology/ebook" target="_blank" rel="noreferrer">Book Source (GitHub)</a>
+              <a href="https://github.com/base16numerology/ebook/releases" target="_blank" rel="noreferrer">EPUB Downloads</a>
+              <a href="https://github.com/base16numerology/base16numerology" target="_blank" rel="noreferrer">Website Source</a>
+            </div>
           </div>
-          <div style="margin-top:12px" class="small">
-            Base 16 Numerology — Horace Chan.
+          <div class="footer-bottom">
+            <p>&copy; 2025 Horace Chan. All rights reserved. Base 16 Numerology is for informational and entertainment purposes only and is not a substitute for professional advice.</p>
           </div>
         </div>
       </footer>
     </main>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+      const nav = document.querySelector('.nav');
+      if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+          const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+          menuBtn.setAttribute('aria-expanded', !expanded);
+          nav.classList.toggle('open');
+        });
+        // Close menu on link click
+        nav.querySelectorAll('a').forEach(a => {
+          a.addEventListener('click', () => {
+            menuBtn.setAttribute('aria-expanded', 'false');
+            nav.classList.remove('open');
+          });
+        });
+      }
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // Header shrink on scroll
+      const header = document.querySelector('.site-header');
+      window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 40);
+      });
+    </script>
   </body>
 </html>

@@ -4,7 +4,7 @@ Static GitHub Pages site for Base 16 Numerology.
 
 ## Live site
 
-- https://base16numerology.github.io/base16numerology/
+- https://base16numerology.github.io/
 
 ## Book (EPUB)
 
