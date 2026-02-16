@@ -90,9 +90,7 @@
           <div class="about-grid">
             <div class="about-portrait">
               <div class="portrait-frame">
-                <div class="portrait-placeholder">
-                  <span class="portrait-hex">0xHC</span>
-                </div>
+                <img class="portrait-photo" src="assets/profile_photo.png" alt="Horace Chan" />
               </div>
             </div>
             <div class="about-text">
@@ -442,7 +440,7 @@
               <div class="contact-details">
                 <div class="contact-item">
                   <span class="contact-label">Email</span>
-                  <a href="mailto:readings@base16numerology.com">readings@base16numerology.com</a>
+                  <a href="mailto:base16numerology@hevangel.com">base16numerology@hevangel.com</a>
                 </div>
                 <div class="contact-item">
                   <span class="contact-label">Response time</span>
@@ -461,7 +459,7 @@
               </div>
             </div>
             <div class="contact-form-wrap">
-              <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+              <form class="contact-form" id="booking-form">
                 <div class="form-group">
                   <label for="name">Full Name (as on birth certificate)</label>
                   <input type="text" id="name" name="name" required placeholder="Your full birth name" />
@@ -567,6 +565,36 @@
       window.addEventListener('scroll', () => {
         header.classList.toggle('scrolled', window.scrollY > 40);
       });
+
+      // Booking form → mailto
+      const bookingForm = document.getElementById('booking-form');
+      if (bookingForm) {
+        bookingForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const name = document.getElementById('name').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const birthdate = document.getElementById('birthdate').value.trim();
+          const birthplace = document.getElementById('birthplace').value.trim();
+          const service = document.getElementById('service').selectedOptions[0].text;
+          const message = document.getElementById('message').value.trim();
+
+          const subject = 'Booking Request: ' + service;
+          const body = [
+            'Full Name: ' + name,
+            'Email: ' + email,
+            'Birth Date & Time: ' + birthdate,
+            'Birthplace: ' + birthplace,
+            'Service: ' + service,
+            '',
+            'Additional Notes:',
+            message || '(none)'
+          ].join('\n');
+
+          window.location.href = 'mailto:base16numerology@hevangel.com'
+            + '?subject=' + encodeURIComponent(subject)
+            + '&body=' + encodeURIComponent(body);
+        });
+      }
     </script>
   </body>
 </html>
